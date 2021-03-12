@@ -86,6 +86,7 @@
     <Compile Include="Assets\Scripts\Items\Agua.cs" />
     <Compile Include="Assets\Scripts\Items\Explosion.cs" />
     <Compile Include="Assets\Scripts\Items\FallDamage.cs" />
+    <Compile Include="Assets\Scripts\Items\FallDamage_v2_Temp.cs" />
     <Compile Include="Assets\Scripts\Items\LineRender\CircleRender.cs" />
     <Compile Include="Assets\Scripts\Items\LineRender\Cuerda.cs" />
     <Compile Include="Assets\Scripts\Items\MattresFollow.cs" />
@@ -96,6 +97,16 @@
     <Compile Include="Assets\Scripts\Items\Waves.cs" />
     <Compile Include="Assets\Scripts\Npc\AttackTemp.cs" />
     <Compile Include="Assets\Scripts\Npc\BulletControllerV3.cs" />
+    <Compile Include="Assets\Scripts\Npc\Inventario\inv - Yout 1\ArmorInventoryItem.cs" />
+    <Compile Include="Assets\Scripts\Npc\Inventario\inv - Yout 1\HandInventoryItem.cs" />
+    <Compile Include="Assets\Scripts\Npc\Inventario\inv - Yout 1\HealthPotionInventoryItem.cs" />
+    <Compile Include="Assets\Scripts\Npc\Inventario\inv - Yout 1\HelmetInventoryItem.cs" />
+    <Compile Include="Assets\Scripts\Npc\Inventario\inv - Yout 1\Inventory.cs" />
+    <Compile Include="Assets\Scripts\Npc\Inventario\inv - Yout 1\InventoryItem.cs" />
+    <Compile Include="Assets\Scripts\Npc\Inventario\inv - Yout 1\InventoryItemWrapper.cs" />
+    <Compile Include="Assets\Scripts\Npc\Inventario\inv - Yout 1\InventorySlot.cs" />
+    <Compile Include="Assets\Scripts\Npc\Inventario\inv - Yout 1\InventoryUI.cs" />
+    <Compile Include="Assets\Scripts\Npc\Inventario\inv - Yout 1\PlayerEquipmentController.cs" />
     <Compile Include="Assets\Scripts\Npc\Npc\Actor.cs" />
     <Compile Include="Assets\Scripts\Npc\Npc\Npc\BulletController.cs" />
     <Compile Include="Assets\Scripts\Npc\Npc\Npc\BulletController_v2.cs" />
@@ -114,6 +125,7 @@
     <Compile Include="Assets\Scripts\Npc\Npc\Npc_v2\GunStatistics.cs" />
     <Compile Include="Assets\Scripts\Npc\Npc\Npc_v2\NpcsController.cs" />
     <Compile Include="Assets\Scripts\Npc\Npc\Npc_v2\Org Script\Attack1.cs" />
+    <Compile Include="Assets\Scripts\Npc\Npc\Npc_v2\Org Script\Attack_Bkup.cs" />
     <Compile Include="Assets\Scripts\Npc\Npc\Npc_v2\Org Script\NpcAcction_Org.cs" />
     <Compile Include="Assets\Scripts\Npc\Npc\Npc_v2\Org Script\WeaponGestorController.cs" />
     <Compile Include="Assets\Scripts\Npc\Npc\Npc_v2\Org Script\WeaponGestorController_Org.cs" />
@@ -122,9 +134,12 @@
     <Compile Include="Assets\Scripts\Npc\Npc\Npc_v2\Resting.cs" />
     <Compile Include="Assets\Scripts\Npc\Npc\Npc_v2\SpecialsAttacks.cs" />
     <Compile Include="Assets\Scripts\Npc\Npc\Way\Waypoint.cs" />
+    <Compile Include="Assets\Scripts\Npc\Weapons\GunStatistics_v2.cs" />
+    <Compile Include="Assets\Scripts\Npc\Weapons\Gun_v2.cs" />
     <Compile Include="Assets\Scripts\Temp-Borrar\CharacterMove\MouseLook.cs" />
     <Compile Include="Assets\Scripts\Temp-Borrar\CharacterMove\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Temp-Borrar\CharacterMove\ThirdPersonMove.cs" />
+    <Compile Include="Assets\Scripts\Temp-Borrar\DetectAndGrabWeapons.cs" />
     <Compile Include="Assets\Scripts\Temp-Borrar\Move.cs" />
     <Compile Include="Assets\Scripts\Temp-Borrar\PaAlante.cs" />
     <Compile Include="Assets\Scripts\UI\UiMenu.cs" />
@@ -134,6 +149,7 @@
     <None Include="Assets\External Assets\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />
     <None Include="Assets\External Assets\JMO Assets\Cartoon FX\CartoonFX Free.txt" />
     <None Include="Assets\External Assets\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
+    <None Include="Assets\Scripts\Npc\Inventario\inv - Yout 1\enlace.txt" />
     <None Include="Assets\External Assets\JMO Assets\Cartoon FX\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -664,31 +680,46 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/Jp/Documents/TF_v0/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/Jp/Documents/GitHub/tfv0/TF_v0/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/Jp/Documents/TF_v0/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/Jp/Documents/GitHub/tfv0/TF_v0/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Formats.Fbx.Editor">
+      <HintPath>C:/Users/Jp/Documents/GitHub/tfv0/TF_v0/Library/ScriptAssemblies/Unity.Formats.Fbx.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder.Editor">
+      <HintPath>C:/Users/Jp/Documents/GitHub/tfv0/TF_v0/Library/ScriptAssemblies/Unity.Recorder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Jp/Documents/TF_v0/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Jp/Documents/GitHub/tfv0/TF_v0/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder">
+      <HintPath>C:/Users/Jp/Documents/GitHub/tfv0/TF_v0/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/Jp/Documents/TF_v0/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/Jp/Documents/GitHub/tfv0/TF_v0/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/Jp/Documents/TF_v0/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/Jp/Documents/GitHub/tfv0/TF_v0/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Jp/Documents/TF_v0/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Jp/Documents/GitHub/tfv0/TF_v0/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/Jp/Documents/TF_v0/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/Jp/Documents/GitHub/tfv0/TF_v0/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Fbx">
+      <HintPath>C:/Users/Jp/Documents/GitHub/tfv0/TF_v0/Library/ScriptAssemblies/Autodesk.Fbx.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Jp/Documents/TF_v0/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Jp/Documents/GitHub/tfv0/TF_v0/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Formats.Fbx.Runtime">
+      <HintPath>C:/Users/Jp/Documents/GitHub/tfv0/TF_v0/Library/ScriptAssemblies/Unity.Formats.Fbx.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Jp/Documents/TF_v0/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/Jp/Documents/GitHub/tfv0/TF_v0/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

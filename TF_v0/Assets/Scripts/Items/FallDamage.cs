@@ -42,6 +42,7 @@ public class FallDamage : MonoBehaviour
             fallForce = vY;
         }*/
 
+        //Si npc/player rg.velocity.y == 0, esta quieto y hace esto
         //Que algo se choque contra ti //Tiene que tener Rigidbody
         /*if (other.gameObject.layer != LayerMask.NameToLayer("Ground"))
         {
